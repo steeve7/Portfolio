@@ -12,8 +12,8 @@ export default function Home(props) {
     Animation.animation.fadeInScreen(props.id);
   };
 
-  const fadeInSubscription =
-    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+  // const fadeInSubscription =
+  //   ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
   return (
     <div className="home-container" id={props.id || ""} >
       <Header/>
