@@ -22,7 +22,7 @@ export default function Testimonies(props) {
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
-    fadeInSubscription();
+    // fadeInSubscription();
 
     const options = {
       loop:true,
