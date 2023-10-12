@@ -19,8 +19,10 @@ export default function Testimonies(props) {
     if (screen.fadeInScreen !== props.id) return;
     Animation.animation.fadeInScreen(props.id);
   };
-  // const fadeInSubscription =
-  //   ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+  const fadeInSubscription =
+    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
+    fadeInSubscription();
 
     const options = {
       loop:true,

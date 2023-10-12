@@ -10,7 +10,8 @@ export default function About(props) {
         return
         Animation.animation.fadeInScreen(props.id)
     }
-    // const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+    const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+    fadeInSubscription();
 
     const SCREEN_CONSTANTS = {
         description:"Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficency. Strong professional with a BSC willing to be and asset for an organisation.",

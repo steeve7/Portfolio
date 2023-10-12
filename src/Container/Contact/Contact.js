@@ -16,8 +16,9 @@ export default function Contact(props) {
     Animation.animation.fadeInScreen(props.id);
   };
 
-  // const fadeInSubscription =
-  //   ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+  const fadeInSubscription =
+    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+    fadeInSubscription();
 
 const [name, setName] = useState("");
 const [email, setEmail] = useState("");
