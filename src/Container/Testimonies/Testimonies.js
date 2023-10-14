@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import OwlCarousel from 'react-owl-carousel';
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -22,7 +22,13 @@ export default function Testimonies(props) {
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
-    // fadeInSubscription();
+      useEffect(() => {
+        return () => {
+          /* UNSUBSCRIBE THE SUBSCRIPTIONS */
+          fadeInSubscription.unsubscribe();
+        };
+      }, [fadeInSubscription]);
+
 
     const options = {
       loop:true,

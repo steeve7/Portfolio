@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import axios from 'axios';
 import {toast} from 'react-toastify'
 import imgBack from '../../../src/images/mailz.jpeg';
@@ -18,7 +18,13 @@ export default function Contact(props) {
 
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
-    // fadeInSubscription();
+
+      useEffect(() => {
+        return () => {
+          /* UNSUBSCRIBE THE SUBSCRIPTIONS */
+          fadeInSubscription.unsubscribe();
+        };
+      }, [fadeInSubscription]);
 
 const [name, setName] = useState("");
 const [email, setEmail] = useState("");

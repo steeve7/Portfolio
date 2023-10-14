@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from './Header/Header';
 import Profile from './Profile/Profile'
 import Footer from './Footer/Footer'
@@ -15,7 +15,13 @@ export default function Home(props) {
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
-    // fadeInSubscription();
+      useEffect(() => {
+        return () => {
+          /* UNSUBSCRIBE THE SUBSCRIPTIONS */
+          fadeInSubscription.unsubscribe();
+        };
+      }, [fadeInSubscription]);
+    
   return (
     <div className="home-container" id={props.id || ""} >
       <Header/>
