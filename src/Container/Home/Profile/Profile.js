@@ -30,9 +30,9 @@ export default function Profile() {
             <div className="profile-details-row">
                 <span className="primary-text">
                     {""}
-                    <h1>Full Stack Developer💻</h1>
+                    <h1>Front End Developer💻</h1>
                     <span className="profile-role-tagline">
-                    Knack of building applicaion with front and back end operations.
+                    Knack of building applicaion with front operations.
                     </span>
                 </span>
             </div>
@@ -40,7 +40,7 @@ export default function Profile() {
                 <button className="btn primary-btn" onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
                 Hire Me
                 </button>
-                <a href="steeve.pdf" download="steeve.pdf">
+                <a href="ofoegbu.pdf" download="ofoegbu.pdf">
                     <button className="btn highlighted-btn">Get Resume</button>
                 </a>
             </div>

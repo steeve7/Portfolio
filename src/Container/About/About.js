@@ -19,14 +19,12 @@ export default function About(props) {
       }, [fadeInSubscription]);
 
     const SCREEN_CONSTANTS = {
-        description:"Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficency. Strong professional with a BSC willing to be and asset for an organisation.",
+        description:"Front end web with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficency. Strong professional with a BSC willing to be and asset for an organisation.",
         highlights:{
             bullets:[
-                "Full stack web and mobile development",
                 "Interactive Front End as per the design",
-                "React and React Native",
-                "Redux and State Management",
-                "Building REST API",
+                "React and Next Js",
+                "API Integration",
                 "Managing Database",
             ],
             heading:"Here are Few Highlight:"
@@ -60,7 +58,7 @@ export default function About(props) {
                     <button className="btn primary-btn" onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
                     Hire Me
                 </button>
-                <a href="Resume (5).pdf" download="chidindu Resume (5).pdf">
+                <a href="ofoegbu.pdf" download="ofoegbu.pdf">
                     <button className="btn highlighted-btn">Get Resume</button>
                 </a>
                     </div>
