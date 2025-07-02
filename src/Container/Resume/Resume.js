@@ -53,41 +53,45 @@ const Resume = (props) => {
 
   //here we have
   const programmingSkillsDetails = [
-    { skill: "JavaScript", ratingPercentage: 75 },
-    { skill: "React JS & Next Js", ratingPercentage: 85 },
+    { skill: "JavaScript", ratingPercentage: 85 },
+    { skill: "React JS & Next Js", ratingPercentage: 95 },
     { skill: "HTML", ratingPercentage: 80 },
     { skill: "TailwindCss", ratingPercentage: 80 },
+    { skill: "TypeScript", ratingPercentage: 80 },
+    { skill: "Redux", ratingPercentage: 80 },
+
   ];
 
   const projectsDetails = [
+    {
+      title: "Digital Dream/Store Manager",
+      duration: { fromDate: "2019", toDate: "2021" },
+      description:
+        "A Store Manager application designed to sell products online wth payment system integration",
+      subHeading:
+        "Technologies Used:  React Js, Next Js, TypeScript, Tailwindcss, Redux",
+    },
     {
       title: "Personal Portfolio Website",
       duration: { fromDate: "2020", toDate: "2021" },
       description:
         "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
-    },
-    {
-      title: "Store Manager ",
-      duration: { fromDate: "2019", toDate: "2021" },
-      description:
-        "A Store Manager application designed to sell products online wth payment system integration",
-      subHeading: "Technologies Used:  Laravel, PostGres, BootStrap",
+      subHeading: "Technologies Used: React JS, CSS3",
     },
     {
       title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      duration: { fromDate: "2022", toDate: "2023" },
       description:
         "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
       subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+        "Technologies Used: React Js, Next Js Redux, TailwindCSS, TypeScript",
     },
     {
       title: "SmartBrain ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      duration: { fromDate: "2023", toDate: "2024" },
       description: "A face detection Application",
       subHeading:
-        "Technologies Used: PostGres, Epress Js, React Js, Node JS, Bootstrap.",
+        "Technologies Used: React Js, Next Js, TypeScript, Redux, TailwindCSS",
     },
   ];
 
