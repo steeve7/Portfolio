@@ -30,7 +30,7 @@ export default function Profile() {
             <div className="profile-details-row">
                 <span className="primary-text">
                     {""}
-                    <h1>Senior Front End Developer💻</h1>
+                    <h1>Front End Developer💻</h1>
                     <span className="profile-role-tagline">
                     Knack of building applicaion with front operations.
                     </span>
